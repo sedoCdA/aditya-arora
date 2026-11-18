@@ -2,7 +2,7 @@
 
 Portfolio of Aditya Arora, AI developer.
 
-Live at https://sedocda.github.io
+Live at https://sedocda.github.io/aditya-arora
 
 ## What's in it
 
