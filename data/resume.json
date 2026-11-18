@@ -1,0 +1,1225 @@
+{
+  "meta": {
+    "site": "https://sedocda.github.io",
+    "version": "v2026.11",
+    "updated": "2026-11-18",
+    "title": "Aditya Arora · AI Developer",
+    "subtitle": "Technical report"
+  },
+  "person": {
+    "name": "Aditya Arora",
+    "handle": "AA-1",
+    "role": "AI Developer",
+    "org": "Xccelera AI Labs",
+    "location": "India",
+    "email": "aparora13@gmail.com",
+    "github": "https://github.com/sedoCdA",
+    "linkedin": "",
+    "status": "Open to AI engineering roles",
+    "resume": "",
+    "photo": "assets/img/aditya.webp",
+    "avatar": "assets/img/avatar.webp"
+  },
+  "voice": {
+    "0.0": {
+      "tone": "formal",
+      "tagline": "AI developer building production-grade agentic AI, RAG, and machine learning systems.",
+      "abstract": "We present AA-1, an AI developer trained on four years of software and AI engineering, from robotic process automation to enterprise retrieval-augmented generation and multi-agent orchestration. AA-1 designs agent harnesses with LangGraph and LangChain, grounds LLM output with FAISS and Pinecone retrieval, and evaluates it with RAGAS and LangFuse. In production, AA-1 reduced IT issue resolution time by 84% and automated 90% of Tier-1 support. AA-1 holds a Post Graduate Diploma in Agentic AI and Machine Learning from IIT Gandhinagar and won the AI-Driven Sustainability Hackathon organised by University College London and IIT Gandhinagar."
+    },
+    "0.7": {
+      "tone": "balanced",
+      "tagline": "I build agentic systems that make it to production, and I measure them once they are there.",
+      "abstract": "AA-1 started out automating web content with RPA bots and now builds agent harnesses: LangGraph orchestration, sandboxed tool execution, and retrieval that keeps models grounded. At Capgemini, AA-1 shipped an enterprise RAG assistant on Vertex AI that cut IT resolution time by 84% and took over 90% of Tier-1 tickets. Along the way: a PG Diploma in Agentic AI from IIT Gandhinagar, a hackathon win with UCL, and a habit of auditing metrics before trusting them. This report covers the training run so far."
+    },
+    "1.5": {
+      "tone": "chaotic good",
+      "tagline": "I teach LLMs to use tools, check each other's work, and occasionally behave.",
+      "abstract": "AA-1 is a human, not a model, but has been fine-tuned on a lot of the same data. Pre-training: RPA bots, Java microservices, ETL pipelines. Fine-tuning: retrieval, agents, and an unreasonable number of evals. Notable emergent abilities include making support tickets disappear (84% faster, 90% automated), catching account takeovers without annoying real users, and refusing to ship a model with target leakage. Known limitations: will ask what your eval set looks like."
+    }
+  },
+  "tldr": [
+    "AI Developer at Xccelera AI Labs, building an AI SDLC platform: agent harness, RAG, and backend",
+    "Shipped an enterprise RAG assistant at Capgemini: 84% faster IT resolution, 90% of Tier-1 automated",
+    "PG Diploma in Agentic AI and ML, IIT Gandhinagar (2026)",
+    "Winner, UCL x IIT Gandhinagar AI Sustainability Hackathon; finalist, KANAD Shield AI Hackathon 2026"
+  ],
+  "benchmarks": [
+    {
+      "task": "IT issue resolution time",
+      "score": "-84%",
+      "setting": "Enterprise RAG assistant, production",
+      "source": "capgemini"
+    },
+    {
+      "task": "Tier-1 support automated",
+      "score": "90%",
+      "setting": "Enterprise RAG assistant, production",
+      "source": "capgemini"
+    },
+    {
+      "task": "Account takeovers detected",
+      "score": "91%",
+      "setting": "while challenging only 2% of genuine users",
+      "source": "pramaan"
+    },
+    {
+      "task": "Access-decision macro F1",
+      "score": "84.1",
+      "setting": "XGBoost vs LR and decision-tree baselines",
+      "source": "agent-pyro"
+    },
+    {
+      "task": "Retrieval hit rate",
+      "score": "100%",
+      "setting": "Northwind copilot eval set, p95 ~200 ms",
+      "source": "northwind"
+    },
+    {
+      "task": "Content update cycle",
+      "score": "2.5 h -> 7 min",
+      "setting": "UiPath bot, 99.97% accuracy over 100+ pages",
+      "source": "wpp"
+    }
+  ],
+  "skills": [
+    {
+      "id": "python",
+      "label": "Python",
+      "group": "Languages",
+      "aliases": [
+        "python",
+        "pandas",
+        "numpy"
+      ]
+    },
+    {
+      "id": "java",
+      "label": "Java",
+      "group": "Languages",
+      "aliases": [
+        "java",
+        "microservices",
+        "spring"
+      ]
+    },
+    {
+      "id": "sql",
+      "label": "SQL",
+      "group": "Languages",
+      "aliases": [
+        "sql",
+        "database"
+      ]
+    },
+    {
+      "id": "langgraph",
+      "label": "LangGraph",
+      "group": "Agentic AI",
+      "aliases": [
+        "langgraph",
+        "state graph",
+        "multi-agent",
+        "orchestration",
+        "agents"
+      ]
+    },
+    {
+      "id": "langchain",
+      "label": "LangChain",
+      "group": "Agentic AI",
+      "aliases": [
+        "langchain",
+        "tool calling",
+        "agents"
+      ]
+    },
+    {
+      "id": "crewai",
+      "label": "CrewAI",
+      "group": "Agentic AI",
+      "aliases": [
+        "crewai",
+        "crew",
+        "multi-agent",
+        "agents"
+      ]
+    },
+    {
+      "id": "mcp",
+      "label": "MCP",
+      "group": "Agentic AI",
+      "aliases": [
+        "mcp",
+        "model context protocol",
+        "tools",
+        "server"
+      ]
+    },
+    {
+      "id": "sandboxing",
+      "label": "Sandboxed execution",
+      "group": "Agentic AI",
+      "aliases": [
+        "sandbox",
+        "sandboxing",
+        "isolation",
+        "security",
+        "agent harness"
+      ]
+    },
+    {
+      "id": "guardrails",
+      "label": "Guardrails + human review",
+      "group": "Agentic AI",
+      "aliases": [
+        "guardrails",
+        "prompt injection",
+        "human in the loop",
+        "hitl",
+        "safety",
+        "security"
+      ]
+    },
+    {
+      "id": "rag",
+      "label": "RAG",
+      "group": "Retrieval",
+      "aliases": [
+        "rag",
+        "retrieval",
+        "grounding",
+        "retrieval augmented generation",
+        "citations"
+      ]
+    },
+    {
+      "id": "faiss",
+      "label": "FAISS",
+      "group": "Retrieval",
+      "aliases": [
+        "faiss",
+        "vector",
+        "vector database",
+        "retrieval"
+      ]
+    },
+    {
+      "id": "pinecone",
+      "label": "Pinecone",
+      "group": "Retrieval",
+      "aliases": [
+        "pinecone",
+        "vector",
+        "vector database"
+      ]
+    },
+    {
+      "id": "chromadb",
+      "label": "ChromaDB",
+      "group": "Retrieval",
+      "aliases": [
+        "chroma",
+        "chromadb",
+        "vector database"
+      ]
+    },
+    {
+      "id": "embeddings",
+      "label": "Embeddings",
+      "group": "Retrieval",
+      "aliases": [
+        "embeddings",
+        "sentence-transformers",
+        "chunking",
+        "semantic search"
+      ]
+    },
+    {
+      "id": "gemini",
+      "label": "Gemini on Vertex AI",
+      "group": "Models",
+      "aliases": [
+        "gemini",
+        "vertex",
+        "vertex ai",
+        "google"
+      ]
+    },
+    {
+      "id": "llama",
+      "label": "Llama via Groq",
+      "group": "Models",
+      "aliases": [
+        "llama",
+        "groq",
+        "open source llm",
+        "llm"
+      ]
+    },
+    {
+      "id": "whisper",
+      "label": "Whisper STT",
+      "group": "Models",
+      "aliases": [
+        "whisper",
+        "speech",
+        "voice",
+        "stt"
+      ]
+    },
+    {
+      "id": "evals",
+      "label": "AI quality testing (evals)",
+      "group": "Evaluation",
+      "aliases": [
+        "evals",
+        "evaluation",
+        "ragas",
+        "langfuse",
+        "langsmith",
+        "codegraph",
+        "observability",
+        "hallucination"
+      ]
+    },
+    {
+      "id": "fastapi",
+      "label": "FastAPI",
+      "group": "Backend",
+      "aliases": [
+        "fastapi",
+        "api",
+        "rest",
+        "backend"
+      ]
+    },
+    {
+      "id": "celery",
+      "label": "Celery + Redis",
+      "group": "Backend",
+      "aliases": [
+        "celery",
+        "redis",
+        "queue",
+        "async",
+        "caching"
+      ]
+    },
+    {
+      "id": "rest",
+      "label": "REST APIs",
+      "group": "Backend",
+      "aliases": [
+        "rest",
+        "api",
+        "jwt",
+        "auth"
+      ]
+    },
+    {
+      "id": "etl",
+      "label": "Python ETL",
+      "group": "Data",
+      "aliases": [
+        "etl",
+        "pipelines",
+        "data engineering",
+        "ingestion"
+      ]
+    },
+    {
+      "id": "docker",
+      "label": "Docker",
+      "group": "MLOps",
+      "aliases": [
+        "docker",
+        "containers",
+        "deployment"
+      ]
+    },
+    {
+      "id": "cicd",
+      "label": "CI/CD + GitHub Actions",
+      "group": "MLOps",
+      "aliases": [
+        "ci/cd",
+        "cicd",
+        "github actions",
+        "deployment",
+        "mlops"
+      ]
+    },
+    {
+      "id": "mlflow",
+      "label": "MLflow",
+      "group": "MLOps",
+      "aliases": [
+        "mlflow",
+        "experiment tracking",
+        "mlops"
+      ]
+    },
+    {
+      "id": "sklearn",
+      "label": "scikit-learn",
+      "group": "Machine learning",
+      "aliases": [
+        "sklearn",
+        "scikit-learn",
+        "machine learning",
+        "classification"
+      ]
+    },
+    {
+      "id": "xgboost",
+      "label": "XGBoost",
+      "group": "Machine learning",
+      "aliases": [
+        "xgboost",
+        "gradient boosting",
+        "lightgbm",
+        "tabular",
+        "machine learning"
+      ]
+    },
+    {
+      "id": "shap",
+      "label": "SHAP",
+      "group": "Machine learning",
+      "aliases": [
+        "shap",
+        "explainability",
+        "xai",
+        "interpretability"
+      ]
+    },
+    {
+      "id": "optuna",
+      "label": "Optuna",
+      "group": "Machine learning",
+      "aliases": [
+        "optuna",
+        "hyperparameter tuning"
+      ]
+    },
+    {
+      "id": "dl",
+      "label": "Deep learning",
+      "group": "Machine learning",
+      "aliases": [
+        "deep learning",
+        "cnn",
+        "lstm",
+        "transfer learning",
+        "computer vision",
+        "mobilenet"
+      ]
+    },
+    {
+      "id": "privacy",
+      "label": "Differential privacy",
+      "group": "Machine learning",
+      "aliases": [
+        "privacy",
+        "differential privacy",
+        "crypto-shredding",
+        "compliance"
+      ]
+    },
+    {
+      "id": "gcp",
+      "label": "Google Cloud",
+      "group": "Cloud",
+      "aliases": [
+        "gcp",
+        "google cloud",
+        "cloud"
+      ]
+    },
+    {
+      "id": "aws",
+      "label": "AWS",
+      "group": "Cloud",
+      "aliases": [
+        "aws",
+        "ec2",
+        "s3",
+        "lambda",
+        "cloud"
+      ]
+    },
+    {
+      "id": "azure",
+      "label": "Azure",
+      "group": "Cloud",
+      "aliases": [
+        "azure",
+        "microsoft",
+        "cloud"
+      ]
+    },
+    {
+      "id": "uipath",
+      "label": "UiPath RPA",
+      "group": "Automation",
+      "aliases": [
+        "uipath",
+        "rpa",
+        "automation"
+      ]
+    }
+  ],
+  "roles": [
+    {
+      "id": "xccelera",
+      "short": "AI Developer · Xccelera",
+      "org": "Xccelera AI Labs",
+      "title": "AI Developer",
+      "start": "2026-08",
+      "end": null,
+      "summary": "Building an AI platform that helps teams design, build, test, and ship AI software, from AI agents to backend services.",
+      "bullets": [
+        "Designed an agent harness with LangGraph and LangChain for tool calling and multi-agent orchestration, with sandboxed execution so agent actions and generated code run in isolation.",
+        "Built RAG retrieval and prompt orchestration over FAISS and Pinecone for grounded LLM responses; monitor output quality with CodeGraph, LangFuse, and RAGAS.",
+        "Developed FastAPI services with Celery and Redis for async task queues and caching, deployed with Docker and CI/CD."
+      ],
+      "skills": [
+        "langgraph",
+        "langchain",
+        "sandboxing",
+        "rag",
+        "faiss",
+        "pinecone",
+        "evals",
+        "fastapi",
+        "celery",
+        "docker",
+        "cicd",
+        "python"
+      ],
+      "outcomes": []
+    },
+    {
+      "id": "capgemini",
+      "short": "GenAI SWE · Capgemini",
+      "org": "Capgemini",
+      "title": "Software Engineer (Generative AI)",
+      "start": "2024-08",
+      "end": "2026-02",
+      "summary": "Built an AI assistant that answers IT support questions from company documents, running on Google Cloud.",
+      "bullets": [
+        "Built an enterprise RAG assistant with Gemini on Vertex AI and LangGraph, reducing IT issue resolution time by 84% and automating 90% of Tier-1 support.",
+        "Engineered pipelines for ingestion, chunking, embeddings, retrieval, and evaluation to improve retrieval quality and scalability.",
+        "Containerised AI services with Docker and set up CI/CD for production deployment.",
+        "Developed Java microservices and REST APIs for customer-facing enterprise applications."
+      ],
+      "skills": [
+        "gemini",
+        "gcp",
+        "langgraph",
+        "rag",
+        "embeddings",
+        "docker",
+        "cicd",
+        "java",
+        "rest",
+        "python"
+      ],
+      "outcomes": [
+        {
+          "id": "o-84",
+          "label": "84% faster IT fixes"
+        },
+        {
+          "id": "o-90",
+          "label": "90% of routine tickets automated"
+        }
+      ]
+    },
+    {
+      "id": "seniorvig",
+      "short": "SWE · SeniorVig",
+      "org": "SeniorVig",
+      "title": "Software Engineer",
+      "start": "2024-01",
+      "end": "2024-07",
+      "summary": "Built secure APIs and data pipelines for the company's web platform.",
+      "bullets": [
+        "Developed secure REST APIs with JWT authentication.",
+        "Built Python ETL pipelines to ingest, validate, and transform data for analytics and ML workflows."
+      ],
+      "skills": [
+        "rest",
+        "etl",
+        "python",
+        "sql"
+      ],
+      "outcomes": []
+    },
+    {
+      "id": "wpp",
+      "short": "RPA intern · WPP",
+      "org": "Wunderman Thompson Studios (WPP)",
+      "title": "Robotic Process Automation Intern",
+      "start": "2022-05",
+      "end": "2022-07",
+      "summary": "Built a software robot that automates website content updates.",
+      "bullets": [
+        "Built a UiPath bot for Ford to automate AEM web content management, cutting the update cycle from 2.5 hours to 7 minutes.",
+        "Validated workflows with regression testing across 100+ webpages at 99.97% accuracy."
+      ],
+      "skills": [
+        "uipath"
+      ],
+      "outcomes": [
+        {
+          "id": "o-rpa",
+          "label": "Updates cut from 2.5 hours to 7 minutes"
+        },
+        {
+          "id": "o-9997",
+          "label": "99.97% accurate across 100+ pages"
+        }
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": "pramaan",
+      "name": "PRAMAAN",
+      "kind": "Protects bank customers from account takeovers",
+      "context": "PSB Hackathon 2026, Bank of Baroda x IIT Gandhinagar (team project)",
+      "year": 2026,
+      "featured": true,
+      "edu": "iitgn",
+      "summary": "A behavioural authentication system that scores every banking session for account-takeover risk, with an explainable fraud pipeline and privacy built in.",
+      "repo": "https://github.com/sedoCdA/bank-of-baroda-hackathon",
+      "demo": "",
+      "skills": [
+        "xgboost",
+        "shap",
+        "optuna",
+        "mlflow",
+        "sklearn",
+        "fastapi",
+        "privacy",
+        "python"
+      ],
+      "outcomes": [
+        {
+          "id": "o-91",
+          "label": "91% of account hijacks caught"
+        },
+        {
+          "id": "o-2",
+          "label": "Only 2% of real users challenged"
+        }
+      ],
+      "trace": [
+        {
+          "type": "plan",
+          "label": "Goal: stop account hijacks without bothering real customers",
+          "detail": "every login session gets a risk score"
+        },
+        {
+          "type": "tool",
+          "label": "Look at how the person behaves",
+          "detail": "device, typing and navigation patterns, unusual activity"
+        },
+        {
+          "type": "llm",
+          "label": "Score the risk with a trained model",
+          "detail": "XGBoost, tuned with Optuna, tracked in MLflow"
+        },
+        {
+          "type": "tool",
+          "label": "Explain why",
+          "detail": "SHAP shows which signals drove each score"
+        },
+        {
+          "type": "eval",
+          "label": "Check the results",
+          "detail": "91% of hijacks caught; only 2% of real users challenged"
+        },
+        {
+          "type": "result",
+          "label": "Allow, ask for extra verification, or block",
+          "detail": "served by a FastAPI service; personal data stays protected"
+        }
+      ],
+      "kpi": "Catches 91% of account hijacks; only 2% of real users get an extra check"
+    },
+    {
+      "id": "agent-max",
+      "name": "Agent Max",
+      "kind": "Voice assistant that handles IT support calls",
+      "context": "Personal project",
+      "year": 2026,
+      "featured": true,
+      "summary": "A voice assistant that listens to a support call, retrieves the right runbook, answers, and escalates by SLA priority.",
+      "repo": "https://github.com/sedoCdA/agent-mcd",
+      "demo": "https://drive.google.com/file/d/1D2FKhgakuwmKvfBqB2r63cxA0V4lwLhN/view?usp=drive_link",
+      "skills": [
+        "whisper",
+        "llama",
+        "langchain",
+        "faiss",
+        "rag",
+        "fastapi",
+        "docker",
+        "cicd",
+        "python"
+      ],
+      "outcomes": [
+        {
+          "id": "o-sla",
+          "label": "Urgent calls escalated automatically"
+        }
+      ],
+      "trace": [
+        {
+          "type": "plan",
+          "label": "Goal: resolve an IT support call by voice",
+          "detail": "listen, diagnose, then fix or escalate"
+        },
+        {
+          "type": "tool",
+          "label": "Turn the caller's speech into text",
+          "detail": "Whisper speech-to-text on Groq"
+        },
+        {
+          "type": "tool",
+          "label": "Find the right fix in the knowledge base",
+          "detail": "FAISS search over IT guides, via LangChain"
+        },
+        {
+          "type": "llm",
+          "label": "Write an answer using only what was found",
+          "detail": "Llama 3.3 70B"
+        },
+        {
+          "type": "tool",
+          "label": "Decide how urgent it is",
+          "detail": "priority P1 to P4; urgent issues go straight to a person"
+        },
+        {
+          "type": "result",
+          "label": "Reply and log the call",
+          "detail": "Docker and GitHub Actions, hosted on Hugging Face Spaces"
+        }
+      ],
+      "kpi": "Answers calls by voice and escalates urgent ones"
+    },
+    {
+      "id": "agent-pyro",
+      "name": "Agent Pyro",
+      "kind": "Safety check for actions taken by AI agents",
+      "context": "IIT Gandhinagar PG Diploma",
+      "year": 2026,
+      "featured": true,
+      "edu": "iitgn",
+      "summary": "Classifies each autonomous-agent action as allowed, blocked, or needs human approval, enforced against a fail-secure permission matrix.",
+      "repo": "https://github.com/sedoCdA/agent-pyro",
+      "demo": "",
+      "skills": [
+        "xgboost",
+        "shap",
+        "mlflow",
+        "sklearn",
+        "guardrails",
+        "python"
+      ],
+      "outcomes": [
+        {
+          "id": "o-841",
+          "label": "84.1 F1 score"
+        }
+      ],
+      "trace": [
+        {
+          "type": "plan",
+          "label": "Goal: decide whether an AI agent's action is safe",
+          "detail": "allow it, block it, or ask a person"
+        },
+        {
+          "type": "tool",
+          "label": "Clean the data honestly",
+          "detail": "removed columns that leaked the answer"
+        },
+        {
+          "type": "llm",
+          "label": "Train and compare models",
+          "detail": "XGBoost beat simpler baseline models"
+        },
+        {
+          "type": "tool",
+          "label": "Apply hard security rules on top",
+          "detail": "about 600 permission rules always override the model"
+        },
+        {
+          "type": "eval",
+          "label": "Check the results",
+          "detail": "84.1 F1 score, with an explanation for every decision"
+        },
+        {
+          "type": "result",
+          "label": "Allow, block, or escalate",
+          "detail": "the model advises; the rules decide"
+        }
+      ],
+      "kpi": "Flags risky AI-agent actions, with an 84.1 F1 score"
+    },
+    {
+      "id": "northwind",
+      "name": "Northwind Support Copilot",
+      "kind": "Support assistant that answers only from company documents",
+      "context": "IIT Gandhinagar PG Diploma",
+      "year": 2026,
+      "featured": true,
+      "edu": "iitgn",
+      "summary": "A support copilot that answers policy questions only from retrieved documents, cites every claim, and keeps a human in the loop before anything reaches a customer.",
+      "repo": "https://github.com/sedoCdA/northwind-support-copilot",
+      "demo": "",
+      "skills": [
+        "rag",
+        "chromadb",
+        "embeddings",
+        "llama",
+        "guardrails",
+        "evals",
+        "python"
+      ],
+      "outcomes": [
+        {
+          "id": "o-hit",
+          "label": "Right document found every time"
+        },
+        {
+          "id": "o-p95",
+          "label": "Answers in about 0.2 seconds"
+        }
+      ],
+      "trace": [
+        {
+          "type": "plan",
+          "label": "Goal: answer a support agent's policy question",
+          "detail": "rule: never answer without a source"
+        },
+        {
+          "type": "tool",
+          "label": "Understand the question",
+          "detail": "sentence-transformers embeddings, run locally"
+        },
+        {
+          "type": "tool",
+          "label": "Find the 3 most relevant documents",
+          "detail": "ChromaDB similarity search"
+        },
+        {
+          "type": "llm",
+          "label": "Write an answer with citations",
+          "detail": "Llama 3.1; it refuses if the documents don't cover it"
+        },
+        {
+          "type": "eval",
+          "label": "Measure quality",
+          "detail": "right document found every time; answers in about 0.2 s"
+        },
+        {
+          "type": "result",
+          "label": "A person reviews it before it's sent",
+          "detail": "human approval step"
+        }
+      ],
+      "kpi": "Finds the right document every time in testing"
+    },
+    {
+      "id": "bytecart",
+      "name": "ByteCart Ops Assistant",
+      "kind": "Team of AI agents with secure tool access",
+      "context": "IIT Gandhinagar PG Diploma",
+      "year": 2026,
+      "featured": true,
+      "edu": "iitgn",
+      "summary": "A custom MCP server exposes document search, record lookup, and report saving; a three-agent CrewAI crew uses it to produce fully sourced ops reports.",
+      "repo": "https://github.com/sedoCdA/mcp-ops-assistant",
+      "demo": "https://drive.google.com/file/d/1W9khfBOzv6qZ_JfFWM6hHGZsMWy6Lr87/view?usp=sharing",
+      "skills": [
+        "mcp",
+        "crewai",
+        "guardrails",
+        "rag",
+        "python"
+      ],
+      "outcomes": [],
+      "trace": [
+        {
+          "type": "plan",
+          "label": "Goal: answer an operations question with a sourced report",
+          "detail": "three agents: researcher, writer, fact-checker"
+        },
+        {
+          "type": "tool",
+          "label": "Researcher searches the documents",
+          "detail": "MCP tool: search_documents"
+        },
+        {
+          "type": "tool",
+          "label": "Researcher looks up order records",
+          "detail": "MCP tool: read_record, with file-access protection"
+        },
+        {
+          "type": "llm",
+          "label": "Fact-checker verifies every claim",
+          "detail": "each claim must cite a document or record"
+        },
+        {
+          "type": "eval",
+          "label": "Safety checks and human approval",
+          "detail": "prompt-injection guard and an approval gate"
+        },
+        {
+          "type": "result",
+          "label": "Save the final report",
+          "detail": "says so clearly when there is no evidence"
+        }
+      ],
+      "kpi": "Three AI agents research, write, and fact-check reports"
+    },
+    {
+      "id": "langgraph-pev",
+      "name": "Plan-Execute-Verify agents",
+      "kind": "LangGraph multi-agent loop",
+      "context": "IIT Gandhinagar PG Diploma",
+      "year": 2026,
+      "edu": "iitgn",
+      "summary": "Planner, executor (with live web search), and verifier agents in a state graph; the verifier scores against a rubric and sends work back until it passes.",
+      "repo": "https://github.com/sedoCdA/Langgraph_agent",
+      "skills": [
+        "langgraph",
+        "langchain",
+        "evals",
+        "python"
+      ],
+      "outcomes": []
+    },
+    {
+      "id": "autonomous-agent",
+      "name": "Autonomous report agent",
+      "kind": "Plan, execute, reflect, deliver",
+      "context": "Personal project",
+      "year": 2026,
+      "summary": "A FastAPI agent that writes its own plan, executes it, self-checks the result, and delivers a Word document.",
+      "repo": "https://github.com/sedoCdA/todo-autonomous-agent",
+      "skills": [
+        "fastapi",
+        "llama",
+        "python"
+      ],
+      "outcomes": []
+    },
+    {
+      "id": "ncert",
+      "name": "NCERT Study Assistant",
+      "kind": "Grounded RAG tutor",
+      "context": "IIT Gandhinagar PG Diploma",
+      "year": 2026,
+      "edu": "iitgn",
+      "summary": "Answers science questions strictly from the textbook, cites chunk IDs inline, and refuses out-of-scope questions.",
+      "repo": "https://github.com/sedoCdA/NCERT-STUDY-ASSISTANT",
+      "demo": "https://ncert-study-assistant-jreoqmevbx9rykyie7cthz.streamlit.app/",
+      "skills": [
+        "rag",
+        "chromadb",
+        "embeddings",
+        "llama",
+        "python"
+      ],
+      "outcomes": []
+    },
+    {
+      "id": "voice-commerce",
+      "name": "Voice commerce support agent",
+      "kind": "Speech in, speech out support bot",
+      "context": "Personal project",
+      "year": 2026,
+      "summary": "Multi-turn customer support over voice with speech recognition, text-to-speech, and order-status awareness.",
+      "repo": "https://github.com/sedoCdA/flipkart-voice-agent",
+      "skills": [
+        "llama"
+      ],
+      "outcomes": []
+    },
+    {
+      "id": "fraud-ieee",
+      "name": "Enterprise fraud detection",
+      "kind": "IEEE-CIS tabular pipeline",
+      "context": "IIT Gandhinagar PG Diploma",
+      "year": 2026,
+      "edu": "iitgn",
+      "summary": "End-to-end fraud pipeline at ~3.5% prevalence: PR-AUC as the primary metric, a cost-minimised decision threshold, and a time-based split.",
+      "repo": "https://github.com/sedoCdA/Fraud-Detection",
+      "skills": [
+        "sklearn",
+        "xgboost",
+        "python"
+      ],
+      "outcomes": []
+    },
+    {
+      "id": "churn",
+      "name": "Pharmacy churn prediction",
+      "kind": "B2B churn model",
+      "context": "IIT Gandhinagar PG Diploma",
+      "year": 2026,
+      "edu": "iitgn",
+      "summary": "Predicts which pharmacies will stop ordering within 30 days, with tier-aware features; logistic regression baseline vs XGBoost.",
+      "repo": "https://github.com/sedoCdA/Pharmalink-Churn-Prediction",
+      "skills": [
+        "xgboost",
+        "sklearn",
+        "python"
+      ],
+      "outcomes": []
+    },
+    {
+      "id": "xray",
+      "name": "Chest X-ray classification",
+      "kind": "Transfer learning with saliency maps",
+      "context": "IIT Gandhinagar PG Diploma",
+      "year": 2026,
+      "edu": "iitgn",
+      "summary": "MobileNetV2 feature extraction, then fine-tuning, with saliency maps so clinicians can see what the model looked at.",
+      "repo": "https://github.com/sedoCdA/Medical-Image-Classification-using-Transfer-Learning",
+      "skills": [
+        "dl",
+        "python"
+      ],
+      "outcomes": []
+    },
+    {
+      "id": "lstm",
+      "name": "Price forecasting with LSTM",
+      "kind": "Sequence model vs naive baseline",
+      "context": "IIT Gandhinagar PG Diploma",
+      "year": 2026,
+      "edu": "iitgn",
+      "summary": "LSTM on 10-day windows with a time-based split, checked against a moving-average baseline.",
+      "repo": "https://github.com/sedoCdA/STOCK-PRICE-PREDICTION-USING-LSTM",
+      "skills": [
+        "dl",
+        "python"
+      ],
+      "outcomes": []
+    },
+    {
+      "id": "moderation",
+      "name": "Social media moderation",
+      "kind": "Classify, then retrieve similar posts",
+      "context": "IIT Gandhinagar PG Diploma",
+      "year": 2026,
+      "edu": "iitgn",
+      "summary": "Two-stage system: an F1-optimised hate-speech classifier on imbalanced data, then similarity search to surface related harmful posts.",
+      "repo": "https://github.com/sedoCdA/Social-Media-Moderation-System",
+      "skills": [
+        "sklearn",
+        "embeddings",
+        "python"
+      ],
+      "outcomes": []
+    }
+  ],
+  "ablations": [
+    {
+      "name": "Target leakage",
+      "project": "agent-pyro",
+      "without": "Columns that encode the label make validation scores look excellent.",
+      "with": "Leaky columns audited and removed; predictions enforced by a ~600-rule fail-secure matrix.",
+      "takeaway": "Audit the features before you trust the metric."
+    },
+    {
+      "name": "Grounding",
+      "project": "northwind",
+      "without": "Free-form generation answers confidently, sources or not.",
+      "with": "Answer only from retrieved context, cite every claim, refuse when the answer is absent.",
+      "takeaway": "Refusal is a feature. Citations make answers checkable."
+    },
+    {
+      "name": "Data split",
+      "project": "fraud-ieee",
+      "without": "A random split lets the future leak into training.",
+      "with": "Time-based split, plus a naive baseline the model has to beat.",
+      "takeaway": "Evaluate the way the model will be used."
+    },
+    {
+      "name": "Tool access",
+      "project": "bytecart",
+      "without": "Agents read and write whatever the tools can reach.",
+      "with": "Tools behind MCP with an injection guard, path-traversal checks, and a human approval gate.",
+      "takeaway": "Agents get the least privilege that still does the job."
+    },
+    {
+      "name": "Raw identity data",
+      "project": "pramaan",
+      "without": "The fraud model needs to hold users' personal data.",
+      "with": "Privacy-first trust boundary with differential privacy and crypto-shredding.",
+      "takeaway": "Security and privacy can be designed in, not bolted on."
+    }
+  ],
+  "evaluation": [
+    {
+      "name": "RAGAS",
+      "what": "Faithfulness, answer relevance, and context precision for RAG pipelines."
+    },
+    {
+      "name": "LangFuse and LangSmith",
+      "what": "Traces for every agent step: inputs, tool calls, latency, and cost."
+    },
+    {
+      "name": "CodeGraph",
+      "what": "Quality monitoring for generated code in the AI SDLC platform."
+    },
+    {
+      "name": "Classical metrics",
+      "what": "Precision, recall, ROC-AUC, PR-AUC, and macro F1, always against a baseline."
+    },
+    {
+      "name": "Explainability",
+      "what": "SHAP for tabular models, saliency maps for vision."
+    }
+  ],
+  "education": [
+    {
+      "id": "iitgn",
+      "short": "PG Diploma · IIT Gandhinagar",
+      "school": "IIT Gandhinagar",
+      "degree": "Post Graduate Diploma in Agentic AI and Machine Learning",
+      "start": "2026-02",
+      "end": "2026-06",
+      "note": "10+ hands-on projects across RAG, agentic AI, computer vision, and MLOps."
+    },
+    {
+      "id": "gla",
+      "short": "BTech · GLA University",
+      "school": "GLA University, Mathura",
+      "degree": "BTech, Computer Science and Engineering",
+      "start": "2020",
+      "end": "2024",
+      "note": "84%"
+    }
+  ],
+  "awards": [
+    {
+      "id": "ucl",
+      "title": "Winner, AI-Driven Sustainability Hackathon",
+      "by": "University College London and IIT Gandhinagar",
+      "year": 2026,
+      "edu": "iitgn"
+    },
+    {
+      "id": "kanad",
+      "title": "Finalist, KANAD Shield AI Hackathon 2026",
+      "by": "National hackathon",
+      "year": 2026
+    },
+    {
+      "id": "poster",
+      "title": "1st place, AI Research Poster Competition",
+      "by": "IIT Gandhinagar",
+      "year": 2026,
+      "edu": "iitgn"
+    }
+  ],
+  "certifications": [
+    {
+      "id": "gen-ai-leader",
+      "title": "Google Generative AI Leader",
+      "skills": [
+        "gemini",
+        "gcp"
+      ]
+    },
+    {
+      "id": "gcp-dev",
+      "title": "Google Cloud Professional Developer",
+      "skills": [
+        "gcp"
+      ]
+    },
+    {
+      "id": "aws-ccp",
+      "title": "AWS Certified Cloud Practitioner",
+      "skills": [
+        "aws"
+      ]
+    },
+    {
+      "id": "az-900",
+      "title": "Microsoft Azure Fundamentals (AZ-900)",
+      "skills": [
+        "azure"
+      ]
+    },
+    {
+      "id": "capg-java",
+      "title": "Capgemini Java Full Stack, Levels 1 and 2",
+      "skills": [
+        "java"
+      ]
+    }
+  ],
+  "hero": {
+    "eyebrow": "AI Developer · Agentic AI · RAG · MLOps",
+    "headline": "I build agentic AI systems that hold up in production.",
+    "sub": "I design AI agents and assistants that use tools, find the right information, and are tested before they go live. Today I'm building an AI development platform at Xccelera AI Labs. Before that, I shipped an IT support assistant at Capgemini that resolves issues 84% faster.",
+    "accent": "production"
+  },
+  "metrics": [
+    {
+      "value": 84,
+      "suffix": "%",
+      "label": "faster IT issue resolution",
+      "note": "AI support assistant at Capgemini"
+    },
+    {
+      "value": 90,
+      "suffix": "%",
+      "label": "of routine IT tickets handled automatically",
+      "note": "Same assistant, used in production"
+    },
+    {
+      "value": 91,
+      "suffix": "%",
+      "label": "of account hijack attempts caught",
+      "note": "Only 2 in 100 real customers got an extra check"
+    },
+    {
+      "value": 14,
+      "suffix": "",
+      "label": "AI systems built",
+      "note": "Agents, assistants, and ML models"
+    }
+  ],
+  "principles": [
+    {
+      "icon": "quote",
+      "title": "Ground every answer",
+      "text": "Answers come from real documents, with sources. If the answer isn't there, the AI says so."
+    },
+    {
+      "icon": "chart-dots",
+      "title": "Test before shipping",
+      "text": "Every system is checked against clear quality measures before it goes live."
+    },
+    {
+      "icon": "shield-lock",
+      "title": "Only the access it needs",
+      "text": "AI agents work in an isolated sandbox with the minimum permissions."
+    },
+    {
+      "icon": "user-check",
+      "title": "A person stays in control",
+      "text": "A human approves any action that changes real data or systems."
+    }
+  ]
+}

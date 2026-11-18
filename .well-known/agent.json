@@ -1,0 +1,114 @@
+{
+  "name": "Aditya Arora (portfolio agent card)",
+  "description": "AI developer building production-grade agentic AI, RAG, and machine learning systems. Static, read-only card describing a human AI developer. Use the linked JSON files to answer questions about their work.",
+  "url": "https://sedocda.github.io",
+  "version": "v2026.11",
+  "provider": {
+    "organization": "Aditya Arora",
+    "url": "https://github.com/sedoCdA"
+  },
+  "documentationUrl": "https://sedocda.github.io/llms.txt",
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false
+  },
+  "defaultInputModes": [
+    "text/plain"
+  ],
+  "defaultOutputModes": [
+    "application/json",
+    "text/markdown"
+  ],
+  "skills": [
+    {
+      "id": "pramaan",
+      "name": "PRAMAAN",
+      "description": "A behavioural authentication system that scores every banking session for account-takeover risk, with an explainable fraud pipeline and privacy built in.",
+      "tags": [
+        "XGBoost",
+        "SHAP",
+        "Optuna",
+        "MLflow",
+        "scikit-learn",
+        "FastAPI",
+        "Differential privacy",
+        "Python"
+      ],
+      "examples": [
+        "What did Aditya build in PRAMAAN?"
+      ]
+    },
+    {
+      "id": "agent-max",
+      "name": "Agent Max",
+      "description": "A voice assistant that listens to a support call, retrieves the right runbook, answers, and escalates by SLA priority.",
+      "tags": [
+        "Whisper STT",
+        "Llama via Groq",
+        "LangChain",
+        "FAISS",
+        "RAG",
+        "FastAPI",
+        "Docker",
+        "CI/CD + GitHub Actions",
+        "Python"
+      ],
+      "examples": [
+        "What did Aditya build in Agent Max?"
+      ]
+    },
+    {
+      "id": "agent-pyro",
+      "name": "Agent Pyro",
+      "description": "Classifies each autonomous-agent action as allowed, blocked, or needs human approval, enforced against a fail-secure permission matrix.",
+      "tags": [
+        "XGBoost",
+        "SHAP",
+        "MLflow",
+        "scikit-learn",
+        "Guardrails + human review",
+        "Python"
+      ],
+      "examples": [
+        "What did Aditya build in Agent Pyro?"
+      ]
+    },
+    {
+      "id": "northwind",
+      "name": "Northwind Support Copilot",
+      "description": "A support copilot that answers policy questions only from retrieved documents, cites every claim, and keeps a human in the loop before anything reaches a customer.",
+      "tags": [
+        "RAG",
+        "ChromaDB",
+        "Embeddings",
+        "Llama via Groq",
+        "Guardrails + human review",
+        "AI quality testing (evals)",
+        "Python"
+      ],
+      "examples": [
+        "What did Aditya build in Northwind Support Copilot?"
+      ]
+    },
+    {
+      "id": "bytecart",
+      "name": "ByteCart Ops Assistant",
+      "description": "A custom MCP server exposes document search, record lookup, and report saving; a three-agent CrewAI crew uses it to produce fully sourced ops reports.",
+      "tags": [
+        "MCP",
+        "CrewAI",
+        "Guardrails + human review",
+        "RAG",
+        "Python"
+      ],
+      "examples": [
+        "What did Aditya build in ByteCart Ops Assistant?"
+      ]
+    }
+  ],
+  "resources": {
+    "resume": "https://sedocda.github.io/data/resume.json",
+    "graph": "https://sedocda.github.io/data/graph.json",
+    "llms": "https://sedocda.github.io/llms.txt"
+  }
+}

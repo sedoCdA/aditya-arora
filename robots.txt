@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sedocda.github.io/sitemap.xml
+# LLM-readable profile: https://sedocda.github.io/llms.txt

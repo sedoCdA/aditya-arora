@@ -1,0 +1,85 @@
+# Aditya Arora
+
+> AI developer building production-grade agentic AI, RAG, and machine learning systems.
+
+We present AA-1, an AI developer trained on four years of software and AI engineering, from robotic process automation to enterprise retrieval-augmented generation and multi-agent orchestration. AA-1 designs agent harnesses with LangGraph and LangChain, grounds LLM output with FAISS and Pinecone retrieval, and evaluates it with RAGAS and LangFuse. In production, AA-1 reduced IT issue resolution time by 84% and automated 90% of Tier-1 support. AA-1 holds a Post Graduate Diploma in Agentic AI and Machine Learning from IIT Gandhinagar and won the AI-Driven Sustainability Hackathon organised by University College London and IIT Gandhinagar.
+
+Status: Open to AI engineering roles. Contact: aparora13@gmail.com. GitHub: https://github.com/sedoCdA.
+
+## Machine-readable files
+- [resume.json](https://sedocda.github.io/data/resume.json): full structured profile (source of truth)
+- [graph.json](https://sedocda.github.io/data/graph.json): knowledge graph of roles, projects, skills, and outcomes
+- [agent.json](https://sedocda.github.io/.well-known/agent.json): agent card
+
+## Results
+- IT issue resolution time: -84% (Enterprise RAG assistant, production)
+- Tier-1 support automated: 90% (Enterprise RAG assistant, production)
+- Account takeovers detected: 91% (while challenging only 2% of genuine users)
+- Access-decision macro F1: 84.1 (XGBoost vs LR and decision-tree baselines)
+- Retrieval hit rate: 100% (Northwind copilot eval set, p95 ~200 ms)
+- Content update cycle: 2.5 h -> 7 min (UiPath bot, 99.97% accuracy over 100+ pages)
+
+## Experience
+### AI Developer, Xccelera AI Labs (2026-08 to present)
+- Designed an agent harness with LangGraph and LangChain for tool calling and multi-agent orchestration, with sandboxed execution so agent actions and generated code run in isolation.
+- Built RAG retrieval and prompt orchestration over FAISS and Pinecone for grounded LLM responses; monitor output quality with CodeGraph, LangFuse, and RAGAS.
+- Developed FastAPI services with Celery and Redis for async task queues and caching, deployed with Docker and CI/CD.
+
+### Software Engineer (Generative AI), Capgemini (2024-08 to 2026-02)
+- Built an enterprise RAG assistant with Gemini on Vertex AI and LangGraph, reducing IT issue resolution time by 84% and automating 90% of Tier-1 support.
+- Engineered pipelines for ingestion, chunking, embeddings, retrieval, and evaluation to improve retrieval quality and scalability.
+- Containerised AI services with Docker and set up CI/CD for production deployment.
+- Developed Java microservices and REST APIs for customer-facing enterprise applications.
+
+### Software Engineer, SeniorVig (2024-01 to 2024-07)
+- Developed secure REST APIs with JWT authentication.
+- Built Python ETL pipelines to ingest, validate, and transform data for analytics and ML workflows.
+
+### Robotic Process Automation Intern, Wunderman Thompson Studios (WPP) (2022-05 to 2022-07)
+- Built a UiPath bot for Ford to automate AEM web content management, cutting the update cycle from 2.5 hours to 7 minutes.
+- Validated workflows with regression testing across 100+ webpages at 99.97% accuracy.
+
+## Projects
+- [PRAMAAN](https://github.com/sedoCdA/bank-of-baroda-hackathon): A behavioural authentication system that scores every banking session for account-takeover risk, with an explainable fraud pipeline and privacy built in. Skills: XGBoost, SHAP, Optuna, MLflow, scikit-learn, FastAPI, Differential privacy, Python.
+- [Agent Max](https://github.com/sedoCdA/agent-mcd): A voice assistant that listens to a support call, retrieves the right runbook, answers, and escalates by SLA priority. Skills: Whisper STT, Llama via Groq, LangChain, FAISS, RAG, FastAPI, Docker, CI/CD + GitHub Actions, Python.
+- [Agent Pyro](https://github.com/sedoCdA/agent-pyro): Classifies each autonomous-agent action as allowed, blocked, or needs human approval, enforced against a fail-secure permission matrix. Skills: XGBoost, SHAP, MLflow, scikit-learn, Guardrails + human review, Python.
+- [Northwind Support Copilot](https://github.com/sedoCdA/northwind-support-copilot): A support copilot that answers policy questions only from retrieved documents, cites every claim, and keeps a human in the loop before anything reaches a customer. Skills: RAG, ChromaDB, Embeddings, Llama via Groq, Guardrails + human review, AI quality testing (evals), Python.
+- [ByteCart Ops Assistant](https://github.com/sedoCdA/mcp-ops-assistant): A custom MCP server exposes document search, record lookup, and report saving; a three-agent CrewAI crew uses it to produce fully sourced ops reports. Skills: MCP, CrewAI, Guardrails + human review, RAG, Python.
+- [Plan-Execute-Verify agents](https://github.com/sedoCdA/Langgraph_agent): Planner, executor (with live web search), and verifier agents in a state graph; the verifier scores against a rubric and sends work back until it passes. Skills: LangGraph, LangChain, AI quality testing (evals), Python.
+- [Autonomous report agent](https://github.com/sedoCdA/todo-autonomous-agent): A FastAPI agent that writes its own plan, executes it, self-checks the result, and delivers a Word document. Skills: FastAPI, Llama via Groq, Python.
+- [NCERT Study Assistant](https://github.com/sedoCdA/NCERT-STUDY-ASSISTANT): Answers science questions strictly from the textbook, cites chunk IDs inline, and refuses out-of-scope questions. Skills: RAG, ChromaDB, Embeddings, Llama via Groq, Python.
+- [Voice commerce support agent](https://github.com/sedoCdA/flipkart-voice-agent): Multi-turn customer support over voice with speech recognition, text-to-speech, and order-status awareness. Skills: Llama via Groq.
+- [Enterprise fraud detection](https://github.com/sedoCdA/Fraud-Detection): End-to-end fraud pipeline at ~3.5% prevalence: PR-AUC as the primary metric, a cost-minimised decision threshold, and a time-based split. Skills: scikit-learn, XGBoost, Python.
+- [Pharmacy churn prediction](https://github.com/sedoCdA/Pharmalink-Churn-Prediction): Predicts which pharmacies will stop ordering within 30 days, with tier-aware features; logistic regression baseline vs XGBoost. Skills: XGBoost, scikit-learn, Python.
+- [Chest X-ray classification](https://github.com/sedoCdA/Medical-Image-Classification-using-Transfer-Learning): MobileNetV2 feature extraction, then fine-tuning, with saliency maps so clinicians can see what the model looked at. Skills: Deep learning, Python.
+- [Price forecasting with LSTM](https://github.com/sedoCdA/STOCK-PRICE-PREDICTION-USING-LSTM): LSTM on 10-day windows with a time-based split, checked against a moving-average baseline. Skills: Deep learning, Python.
+- [Social media moderation](https://github.com/sedoCdA/Social-Media-Moderation-System): Two-stage system: an F1-optimised hate-speech classifier on imbalanced data, then similarity search to surface related harmful posts. Skills: scikit-learn, Embeddings, Python.
+
+## Education
+- Post Graduate Diploma in Agentic AI and Machine Learning, IIT Gandhinagar (2026-02 to 2026-06). 10+ hands-on projects across RAG, agentic AI, computer vision, and MLOps.
+- BTech, Computer Science and Engineering, GLA University, Mathura (2020 to 2024). 84%
+
+## Awards
+- Winner, AI-Driven Sustainability Hackathon (University College London and IIT Gandhinagar, 2026)
+- Finalist, KANAD Shield AI Hackathon 2026 (National hackathon, 2026)
+- 1st place, AI Research Poster Competition (IIT Gandhinagar, 2026)
+
+## Certifications
+- Google Generative AI Leader
+- Google Cloud Professional Developer
+- AWS Certified Cloud Practitioner
+- Microsoft Azure Fundamentals (AZ-900)
+- Capgemini Java Full Stack, Levels 1 and 2
+
+## Skills
+- Languages: Python, Java, SQL
+- Agentic AI: LangGraph, LangChain, CrewAI, MCP, Sandboxed execution, Guardrails + human review
+- Retrieval: RAG, FAISS, Pinecone, ChromaDB, Embeddings
+- Models: Gemini on Vertex AI, Llama via Groq, Whisper STT
+- Evaluation: AI quality testing (evals)
+- Backend: FastAPI, Celery + Redis, REST APIs
+- Data: Python ETL
+- MLOps: Docker, CI/CD + GitHub Actions, MLflow
+- Machine learning: scikit-learn, XGBoost, SHAP, Optuna, Deep learning, Differential privacy
+- Cloud: Google Cloud, AWS, Azure
+- Automation: UiPath RPA
