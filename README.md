@@ -1,4 +1,4 @@
-# sedoCdA.github.io
+# My Portfolio
 
 Portfolio of Aditya Arora, AI developer.
 
